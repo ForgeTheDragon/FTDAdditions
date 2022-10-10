@@ -1,0 +1,22 @@
+#Blocks
+tile.ChaoticBlock.name=Хаотический блок
+
+#Items
+item.ChaoticIngot.name=Хаотический слиток
+item.ChaosFragment.name=Фрагмент хаоса
+item.CorruptionCore.name=§dИскажённое ядро§r
+item.ChaoticHeart.name=Хаотическое сердце
+
+#Descriptions
+
+#ChaoticHeart
+info.ChaoticHeart.name=§5Удерживайте §6Shift §5для деталей.
+info.ChaoticHeart.0.name=§5Используется в ритауле: §6Искажение Дракония хаосом§5.
+info.ChaoticHeart.1.name=
+info.ChaoticHeart.2.name=§51) Поставьте §64 Пробуждённых блока§5.
+info.ChaoticHeart.3.name=§52) Активируйте Cердце, использовав силу взрыва.
+info.ChaoticHeart.4.name=§53) Киньте §68 Искажённых ядер§5.
+info.ChaoticHeart.5.name=§54) Дождитесь окончания ритуала.
+
+#Special
+itemGroup.TabFTDAdditions=FTD Additions
