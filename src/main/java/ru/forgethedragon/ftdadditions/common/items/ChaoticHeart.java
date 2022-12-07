@@ -9,16 +9,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import ru.forgethedragon.ftdadditions.FTDAdditions;
+import ru.forgethedragon.ftdadditions.FTDTab;
 import ru.forgethedragon.ftdadditions.common.entity.EntityHeart;
 
 import java.util.List;
 
 public class ChaoticHeart extends ItemHeart {
 
+    //that class containment a code of other author
     public ChaoticHeart(String name, String texture) {
         this.setUnlocalizedName(name);
         this.setTextureName(FTDAdditions.TEXTURES + ":" + texture);
-        this.setCreativeTab(FTDAdditions.tabFTDAdditions);
+        this.setCreativeTab(FTDTab.ftdTab);
         this.setMaxStackSize(1);
     }
 

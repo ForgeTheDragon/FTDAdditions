@@ -1,9 +1,9 @@
 [
 {
   "modid": "FTDAdditions",
-  "name": "FTD Additions",
-  "description": "Mod for Minecraft, which includes mainly items for Modpacks.",
-  "version": "0.1.0",
+  "name": "FTDAdditions",
+  "description": "Mod adds crafting materials and items for Modpacks.",
+  "version": "1.0.0",
   "mcversion": "1.7.10",
   "url": "https://github.com/ForgeTheDragon",
   "updateUrl": "",

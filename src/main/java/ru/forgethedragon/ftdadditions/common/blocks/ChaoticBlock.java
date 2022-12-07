@@ -12,6 +12,7 @@ import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import ru.forgethedragon.ftdadditions.FTDAdditions;
+import ru.forgethedragon.ftdadditions.FTDTab;
 
 public class ChaoticBlock extends Block {
     @SideOnly(Side.CLIENT)
@@ -23,7 +24,7 @@ public class ChaoticBlock extends Block {
         super(material);
         this.setBlockName(name);
         this.setBlockTextureName(FTDAdditions.TEXTURES + ":" + texture);
-        this.setCreativeTab(FTDAdditions.tabFTDAdditions);
+        this.setCreativeTab(FTDTab.ftdTab);
         this.setLightOpacity(10);
         this.setHardness(50.0F);
         this.setResistance(2000.0F);

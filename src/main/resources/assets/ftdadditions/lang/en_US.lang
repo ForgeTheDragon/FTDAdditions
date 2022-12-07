@@ -1,15 +1,61 @@
+##General
+
 #Blocks
+tile.RubberCrop.name=Rubber Crop
+tile.GraphiteCrop.name=Graphite Crop
+tile.MeteorCrop.name=Meteorite Crop
+tile.DeshCrop.name=Desh Crop
+tile.TitanCrop.name=Titan Crop
+tile.VoidCrop.name=Void Crop
+tile.GaiaCrop.name=Gaia Crop
+tile.EfiriumCrop.name=Efirium Crop
+tile.NetherStarCrop.name=Nether Star Crop
+tile.AwakenedDraconiumCrop.name=Awakened Draconium Crop
+tile.CosmicCrop.name=Cosmic Crop
 tile.ChaoticBlock.name=Chaotic Block
+tile.AbsolutioBlock.name=§8Absolutio Block§r
+tile.RunicStabilizer.name=§eRunic Stabilizer§r
+tile.RunicAccelerator.name=§dRunic Accelerator§r
 
 #Items
-item.ChaoticIngot.name=Chaotic Ingot
+item.DragonEmblem.name=§6Dragon Emblem§r
+item.StarEmblem.name=§cStar Emblem§r
 item.ChaosFragment.name=Chaos Fragment
+item.ChaoticIngot.name=Chaotic Ingot
+item.RubberSeeds.name=Rubber Seeds
+item.GraphiteSeeds.name=Graphite Seeds
+item.MeteorSeeds.name=Meteorite Seeds
+item.DeshSeeds.name=Desh Seeds
+item.TitanSeeds.name=Titan Seeds
+item.VoidSeeds.name=Void Seeds
+item.GaiaSeeds.name=Gaia Seeds
+item.EfiriumSeeds.name=Efirium Seeds
+item.NetherStarSeeds.name=Nether Star Seeds
+item.AwakenedDraconiumSeeds.name=Awakened Draconium Seeds
+item.CosmicSeeds.name=§cCosmic Seeds§r
+item.AbsolutioEssence.name=§8Absolutio Essence§r
+item.RubberEssence.name=Rubber Essence
+item.GraphiteEssence.name=Graphite Essence
+item.MeteorEssence.name=Meteorite Essence
+item.DeshEssence.name=Desh Essence
+item.TitanEssence.name=Titan Essence
+item.VoidEssence.name=Void Essence
+item.GaiaEssence.name=Gaia Essence
+item.EfiriumEssence.name=Efirium Essence
+item.NetherStarEssence.name=Nether Star Essence
+item.AwakenedDraconiumEssence.name=Awakened Draconium Essence
+item.CosmicEssence.name=§cCosmic Essence§r
 item.CorruptionCore.name=§dCorruption Core§r
+item.RunicRod.name=§cRunic Rod§r
+item.RunicCap.name=§dRunic Cap§r
 item.ChaoticHeart.name=Chaotic Heart
+item.SolderingIron.name=Soldering Iron
+item.Wand.runic_cap.cap=Illuminated by Antiquity
+item.Wand.runic_rod.rod=relict
 
-#Descriptions
+##Descriptions
 
-#ChaoticHeart
+#Chaotic Heart
 info.ChaoticHeart.name=§5Hold §6Shift §5for details.
 info.ChaoticHeart.0.name=§5Used in rutual: §6Draconium Chaos Corruption§5.
 info.ChaoticHeart.1.name=
@@ -18,5 +64,21 @@ info.ChaoticHeart.3.name=§52) Activate Heart, using explosion power.
 info.ChaoticHeart.4.name=§53) Throw out §68 Corruption Cores§5.
 info.ChaoticHeart.5.name=§54) Wait a End of Ritual.
 
-#Special
-itemGroup.TabFTDAdditions=FTD Additions
+#Amulet Anti-Corruption
+info.AmuletAntiCorruption.0.name=§5Hold §6Shift §5for details.
+info.AmuletAntiCorruption.1.name=§5When equipped::
+info.AmuletAntiCorruption.2.name=§5- Effect §6Protection from Corruption
+info.AmuletAntiCorruption.3.name=
+info.AmuletAntiCorruption.4.name=§5Can equip how §6Amulet§5.
+
+#Soldering Iron
+info.SolderingIron.0.name=Energy level: 1
+info.SolderingIron.1.name=
+
+##Special
+
+#Tabs
+itemGroup.FTDAdditions=FTDAdditions
+
+#Aspects
+tc.aspect.relictum=Relic, Legend

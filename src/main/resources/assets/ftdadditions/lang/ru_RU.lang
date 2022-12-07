@@ -1,15 +1,62 @@
-#Blocks
+##Основное
+
+#Блоки
+tile.RubberCrop.name=Резиновая культура
+tile.GraphiteCrop.name=Графитовая культура
+tile.MeteorCrop.name=Метеоритовая культура
+tile.DeshCrop.name=Культура деш
+tile.TitanCrop.name=Титановая культура
+tile.VoidCrop.name=Пустотная культура
+tile.GaiaCrop.name=Культура гайи
+tile.EfiriumCrop.name=Эфириумовая культура
+tile.NetherStarCrop.name=Культура адской звезды
+tile.AwakenedDraconiumCrop.name=Культура пробуждённого дракония
+tile.CosmicCrop.name=Космическая культура
 tile.ChaoticBlock.name=Хаотический блок
+tile.AbsolutioBlock.name=§8Absolutio Block§r
+tile.RunicStabilizer.name=§eРунический стабилизатор§r
+tile.RunicAccelerator.name=§dРунический ускоритель§r
 
-#Items
-item.ChaoticIngot.name=Хаотический слиток
+#Предметы
+item.DragonEmblem.name=§6Эмблема Дракона§r
+item.StarEmblem.name=§cЭмблема Звезды§r
 item.ChaosFragment.name=Фрагмент хаоса
+item.ChaoticIngot.name=Хаотический слиток
+item.RubberSeeds.name=Резиновые семена
+item.GraphiteSeeds.name=Графитовые семена
+item.MeteorSeeds.name=Метеоритовые семена
+item.DeshSeeds.name=Семена деш
+item.TitanSeeds.name=Титановые семена
+item.VoidSeeds.name=Пустотные семена
+item.GaiaSeeds.name=Семена гайи
+item.EfiriumSeeds.name=Эфириумовые семена
+item.NetherStarSeeds.name=Семена адской звезды
+item.AwakenedDraconiumSeeds.name=Семена пробуждённого дракония
+item.CosmicSeeds.name=§cКосмические семена§r
+item.AbsolutioEssence.name=§8Абсолютиовая эссенция§r
+item.RubberEssence.name=Резиновая эссенция
+item.GraphiteEssence.name=Графитовая эссенция
+item.MeteorEssence.name=Метеоритовая эссенция
+item.DeshEssence.name=Эссенция деш
+item.TitanEssence.name=Титановая эссенция
+item.VoidEssence.name=Пустотная эссенция
+item.GaiaEssence.name=Эссенция гайи
+item.EfiriumEssence.name=Эфириумовая эссенция
+item.NetherStarEssence.name=Эссенция адской звезды
+item.AwakenedDraconiumEssence.name=Эссенция пробуждённого дракония
+item.CosmicEssence.name=§cКосмическая эссенция§r
 item.CorruptionCore.name=§dИскажённое ядро§r
+item.RunicRod.name=§cРунический стержень§r
+item.RunicCap.name=§dРунический наконечник§r
 item.ChaoticHeart.name=Хаотическое сердце
+item.SolderingIron.name=Паяльник
+item.AmuletAntiCorruption.name=§dАмулет Анти-искажения§r
+item.Wand.runic_cap.cap=Озарённый древностью
+item.Wand.runic_rod.rod=реликтовый
 
-#Descriptions
+##Описания
 
-#ChaoticHeart
+#Хаотическое сердце
 info.ChaoticHeart.name=§5Удерживайте §6Shift §5для деталей.
 info.ChaoticHeart.0.name=§5Используется в ритауле: §6Искажение Дракония хаосом§5.
 info.ChaoticHeart.1.name=
@@ -18,5 +65,21 @@ info.ChaoticHeart.3.name=§52) Активируйте Cердце, исполь�
 info.ChaoticHeart.4.name=§53) Киньте §68 Искажённых ядер§5.
 info.ChaoticHeart.5.name=§54) Дождитесь окончания ритуала.
 
-#Special
-itemGroup.TabFTDAdditions=FTD Additions
+#Амулет Анти-Искажения
+info.AmuletAntiCorruption.0.name=§5Удерживайте §6Shift §5для деталей.
+info.AmuletAntiCorruption.1.name=§5Когда экипировано:
+info.AmuletAntiCorruption.2.name=§5- Эффект §6Защита от искажения
+info.AmuletAntiCorruption.3.name=
+info.AmuletAntiCorruption.4.name=§5Можно экипировать как §6Амулет§5.
+
+#Паяльник
+info.SolderingIron.0.name=Энергоуровень: 1
+info.SolderingIron.1.name=
+
+##Особое
+
+#Вкладки
+itemGroup.FTDAdditions=FTDAdditions
+
+#Аспекты
+tc.aspect.relictum=Реликвия, Легенда

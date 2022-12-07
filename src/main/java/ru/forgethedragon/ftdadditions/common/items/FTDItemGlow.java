@@ -5,13 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import ru.forgethedragon.ftdadditions.FTDAdditions;
+import ru.forgethedragon.ftdadditions.FTDTab;
 
 public class FTDItemGlow extends Item {
 
     public FTDItemGlow(String name, String texture) {
         this.setUnlocalizedName(name);
         this.setTextureName(FTDAdditions.TEXTURES + ":" + texture);
-        this.setCreativeTab(FTDAdditions.tabFTDAdditions);
+        this.setCreativeTab(FTDTab.ftdTab);
     }
 
     @SideOnly(Side.CLIENT)

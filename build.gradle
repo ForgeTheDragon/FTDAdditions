@@ -64,6 +64,7 @@ dependencies {
 	compile name: 'ModTweaker2-0.9.6-deobf'
 	compile name: 'NotEnoughItems-1.7.10-1.0.5.120-universal-deobf'
 	compile name: 'Thaumcraft-1.7.10-4.2.3.5-deobf'
+	compile name: 'Botania+r1.8-249-deobf'
 	compile fileTree(dir: 'libs', include: '*.jar')
 }
 

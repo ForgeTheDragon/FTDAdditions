@@ -1,4 +1,4 @@
-package ru.forgethedragon.ftdadditions.client.render.entity;
+package ru.forgethedragon.ftdadditions.client.render;
 
 import com.brandon3055.draconicevolution.client.handler.ClientEventHandler;
 import net.minecraft.client.renderer.OpenGlHelper;
@@ -16,6 +16,7 @@ import ru.forgethedragon.ftdadditions.common.entity.EntityChaoticHeart;
 import ru.forgethedragon.ftdadditions.handlers.FTDItems;
 
 public class RenderChaoticHeart extends Render {
+    //Class taken from Draconic Evolution
 
     private static final ResourceLocation texture = new ResourceLocation(FTDAdditions.TEXTURES + ":" + "textures/items/heart_chaotic.png");
 
