@@ -1,8 +1,6 @@
 package ru.forgethedragon.ftdadditions.client.render;
 
-import lemoncraft.ModelWrapperDisplayList;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
@@ -10,9 +8,7 @@ import net.minecraftforge.client.model.AdvancedModelLoader;
 import net.minecraftforge.client.model.IModelCustom;
 import net.minecraftforge.client.model.obj.WavefrontObject;
 import org.lwjgl.opengl.GL11;
-import ru.forgethedragon.ftdadditions.common.blocks.tiles.TileRunicStabilizer;
 
-import static org.lwjgl.opengl.GL11.glRotated;
 import static org.lwjgl.opengl.GL11.glTranslated;
 
 public class RenderItemRunicStabilizer implements IItemRenderer {

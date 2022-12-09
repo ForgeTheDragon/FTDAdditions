@@ -56,7 +56,18 @@ public class FTDTab extends CreativeTabs {
         list.add(new ItemStack(FTDItems.emblemDragon));
         list.add(new ItemStack(FTDItems.emblemStar));
         list.add(new ItemStack(FTDItems.fragmentChaos));
+        list.add(new ItemStack(FTDItems.dustBrick));
+        list.add(new ItemStack(FTDItems.dustNetherBrick));
+        list.add(new ItemStack(FTDItems.dustBurntBrick));
+        list.add(new ItemStack(FTDItems.blendCoke));
+        list.add(new ItemStack(FTDItems.blendFireproof));
+        list.add(new ItemStack(FTDItems.blendHighQuality));
+        list.add(new ItemStack(FTDItems.brickCoke));
+        list.add(new ItemStack(FTDItems.brickFireproof));
+        list.add(new ItemStack(FTDItems.brickSmeltery));
         list.add(new ItemStack(FTDItems.ingotChaotic));
+        list.add(new ItemStack(FTDItems.sheetCarbon));
+        list.add(new ItemStack(FTDItems.sheetPlastic));
         list.add(new ItemStack(FTDItems.seedsRubber));
         list.add(new ItemStack(FTDItems.seedsGraphite));
         list.add(new ItemStack(FTDItems.seedsMeteor));
@@ -81,6 +92,8 @@ public class FTDTab extends CreativeTabs {
         list.add(new ItemStack(FTDItems.essenceAwakenedDraconium));
         list.add(new ItemStack(FTDItems.essenceCosmic));
         list.add(new ItemStack(FTDItems.coreCorruption));
+        list.add(new ItemStack(FTDItems.quantumModuleCompression));
+        list.add(new ItemStack(FTDItems.quantumModuleInfinity));
         list.add(new ItemStack(FTDItems.runicRod));
         list.add(new ItemStack(FTDItems.runicCap));
         list.add(new ItemStack(FTDItems.heartChaotic));

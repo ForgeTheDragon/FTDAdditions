@@ -16,7 +16,18 @@ public class FTDItems {
     public static final Item emblemDragon = new FTDItem("DragonEmblem", "emblem_dragon");
     public static final Item emblemStar = new FTDItem("StarEmblem", "emblem_star");
     public static final Item fragmentChaos = new FTDItem("ChaosFragment", "fragment_chaos");
+    public static final Item dustBrick = new FTDItem("BrickDust", "dust_brick");
+    public static final Item dustNetherBrick = new FTDItem("NetherBrickDust", "dust_nether_brick");
+    public static final Item dustBurntBrick = new FTDItem("BurntBrickDust", "dust_burnt_brick");
+    public static final Item blendCoke = new FTDItem("CokeBlend", "blend_coke");
+    public static final Item blendFireproof = new FTDItem("FireproofBlend", "blend_fireproof");
+    public static final Item blendHighQuality = new FTDItem("HighQualityBlend", "blend_high_quality");
+    public static final Item brickCoke = new FTDItem("CokeBrick", "brick_coke");
+    public static final Item brickFireproof = new FTDItem("FireproofBrick", "brick_fireproof");
+    public static final Item brickSmeltery = new FTDItem("SmelteryBrick", "brick_smeltery");
     public static final Item ingotChaotic = new FTDItem("ChaoticIngot", "ingot_chaotic");
+    public static final Item sheetCarbon = new FTDItem("CarbonSheet", "sheet_carbon");
+    public static final Item sheetPlastic = new FTDItem("PlasticSheet", "sheet_plastic");
     public static final Item seedsRubber = new FTDMagicSeed(FTDBlocks.cropRubber, farmland, "RubberSeeds", "seeds_rubber");
     public static final Item seedsGraphite = new FTDMagicSeed(FTDBlocks.cropGraphite, farmland, "GraphiteSeeds", "seeds_graphite");
     public static final Item seedsMeteor = new FTDMagicSeed(FTDBlocks.cropMeteor, farmland, "MeteorSeeds", "seeds_meteor");
@@ -41,17 +52,35 @@ public class FTDItems {
     public static final Item essenceAwakenedDraconium = new FTDItem("AwakenedDraconiumEssence", "essence_awakened_draconium");
     public static final Item essenceCosmic = new FTDItem("CosmicEssence", "essence_cosmic");
     public static final Item coreCorruption = new FTDItemGlow("CorruptionCore", "core_corruption");
+    public static final Item quantumModuleCompression = new FTDItem("CompressionQuantumModule", "quantum_module_compression");
+    public static final Item quantumModuleInfinity = new FTDItem("InfinityQuantumModule", "quantum_module_infinity");
     public static final Item runicRod = new FTDItem("RunicRod", "runic_rod");
     public static final Item runicCap = new FTDItem("RunicCap", "runic_cap");
+    public static final ItemHeart heartChaotic = new ChaoticHeart("ChaoticHeart", "heart_chaotic");
     public static final Item solderingIron = new SolderingIron("SolderingIron", "soldering_iron");
     public static final Item amuletAntiCorruption = new AmuletAntiCorruption("AmuletAntiCorruption", "amulet_anti_corruption");
-    public static final ItemHeart heartChaotic = new ChaoticHeart("ChaoticHeart", "heart_chaotic");
     public static final WandRod wandRunicRod = new WandRunicRod();
     public static final WandCap wandRunicCap = new WandRunicCap();
 
     public static void registerItem() {
-            ItemRegisterHelper.registerItem(FTDItems.emblemDragon);
-            ItemRegisterHelper.registerItem(FTDItems.emblemStar);
+        ItemRegisterHelper.registerItem(FTDItems.emblemDragon);
+        ItemRegisterHelper.registerItem(FTDItems.emblemStar);
+
+        if (!CommonProxy.additionSolarEclipse) {
+            ItemRegisterHelper.registerItem(FTDItems.dustBrick);
+            ItemRegisterHelper.registerItem(FTDItems.dustNetherBrick);
+            ItemRegisterHelper.registerItem(FTDItems.dustBurntBrick);
+            ItemRegisterHelper.registerItem(FTDItems.blendCoke);
+            ItemRegisterHelper.registerItem(FTDItems.blendFireproof);
+            ItemRegisterHelper.registerItem(FTDItems.blendHighQuality);
+            ItemRegisterHelper.registerItem(FTDItems.brickCoke);
+            ItemRegisterHelper.registerItem(FTDItems.brickFireproof);
+            ItemRegisterHelper.registerItem(FTDItems.brickSmeltery);
+            ItemRegisterHelper.registerItem(FTDItems.sheetCarbon);
+            ItemRegisterHelper.registerItem(FTDItems.sheetPlastic);
+            ItemRegisterHelper.registerItem(FTDItems.quantumModuleCompression);
+            ItemRegisterHelper.registerItem(FTDItems.quantumModuleInfinity);
+        }
 
         if (!CommonProxy.additionDraconicEvolution) {
             ItemRegisterHelper.registerItem(FTDItems.fragmentChaos);
