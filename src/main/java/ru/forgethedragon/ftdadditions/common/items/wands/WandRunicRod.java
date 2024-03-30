@@ -5,16 +5,18 @@ import net.minecraft.util.ResourceLocation;
 import ru.forgethedragon.ftdadditions.handlers.FTDItems;
 import thaumcraft.api.wands.WandRod;
 
+import static ru.forgethedragon.ftdadditions.common.CommonProxy.rodCapacity;
+
 public class WandRunicRod extends WandRod {
     ResourceLocation textureRod = new ResourceLocation("ftdadditions:textures/models/runic_rod.png");
 
     public WandRunicRod() {
-        super("runic_rod", 3500, new ItemStack(FTDItems.runicRod), 60);
+        super("runic_rod", rodCapacity, new ItemStack(FTDItems.runicRod), 60);
         this.setGlowing(true);
     }
 
     public WandRunicRod(String s) {
-        super(s, 3500, new ItemStack(FTDItems.runicRod), 60);
+        super(s, rodCapacity, new ItemStack(FTDItems.runicRod), 60);
         this.setGlowing(true);
     }
 

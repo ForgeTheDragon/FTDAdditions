@@ -1,4 +1,4 @@
-package ru.forgethedragon.ftdadditions.common.items;
+package ru.forgethedragon.ftdadditions.common.items.bases;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

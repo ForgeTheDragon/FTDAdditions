@@ -2,10 +2,10 @@
 {
   "modid": "FTDAdditions",
   "name": "FTDAdditions",
-  "description": "A Helpful Mod, contributing crafting & functional items for my Modpacks, such as soldering iron, new ingots, new devices, missing plates/nuggets, new crops and etc.",
-  "version": "1.1.0",
+  "description": "A Helpful Mod, contributing crafting & functional items for my Modpacks, such as soldering iron, new ingots, new devices, missing plates/nuggets, new crops and etc. Special release for Solar Eclipse: Remastered.",
+  "version": "1.2.0",
   "mcversion": "1.7.10",
-  "url": "https://github.com/ForgeTheDragon",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/ftdadditions",
   "updateUrl": "",
   "authorList": ["ForgeTheDragon"],
   "credits": "",

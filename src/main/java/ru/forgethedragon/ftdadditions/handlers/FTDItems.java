@@ -1,8 +1,9 @@
 package ru.forgethedragon.ftdadditions.handlers;
 
 import net.minecraft.item.Item;
-import ru.forgethedragon.ftdadditions.common.CommonProxy;
+import net.minecraftforge.common.util.EnumHelper;
 import ru.forgethedragon.ftdadditions.common.items.*;
+import ru.forgethedragon.ftdadditions.common.items.bases.*;
 import ru.forgethedragon.ftdadditions.common.items.wands.WandRunicCap;
 import ru.forgethedragon.ftdadditions.common.items.wands.WandRunicRod;
 import ru.forgethedragon.ftdadditions.helpers.ItemRegisterHelper;
@@ -10,11 +11,14 @@ import thaumcraft.api.wands.WandCap;
 import thaumcraft.api.wands.WandRod;
 
 import static com.mark719.magicalcrops.handlers.ModCompat.farmland;
+import static ru.forgethedragon.ftdadditions.common.CommonProxy.*;
 
 public class FTDItems {
 
-    public static final Item emblemDragon = new FTDItem("DragonEmblem", "emblem_dragon");
-    public static final Item emblemStar = new FTDItem("StarEmblem", "emblem_star");
+    public static final Item.ToolMaterial toolMaterialUltimate = EnumHelper.addToolMaterial("Ultimate", 8, -1, 50F, 30F, 30);
+
+    public static final Item emblemDragon = new FinalEmblem("DragonEmblem", "emblem_dragon", "DragonEmblem");
+    public static final Item emblemStar = new FinalEmblem("StarEmblem", "emblem_star", "StarEmblem");
     public static final Item fragmentChaos = new FTDItem("ChaosFragment", "fragment_chaos");
     public static final Item dustBrick = new FTDItem("BrickDust", "dust_brick");
     public static final Item dustNetherBrick = new FTDItem("NetherBrickDust", "dust_nether_brick");
@@ -61,68 +65,101 @@ public class FTDItems {
     public static final Item amuletAntiCorruption = new AmuletAntiCorruption("AmuletAntiCorruption", "amulet_anti_corruption");
     public static final WandRod wandRunicRod = new WandRunicRod();
     public static final WandCap wandRunicCap = new WandRunicCap();
+    public static final Item circuitBaseBasic = new FTDItem("BasicCircuitBase", "circuit_base_basic");
+    public static final Item circuitBaseAdvanced = new FTDItem("AdvancedCircuitBase", "circuit_base_advanced");
+    public static final Item circuitBasePerfect = new FTDItem("PerfectCircuitBase", "circuit_base_perfect");
+    public static final Item controlChipBasic = new FTDItem("BasicControlChip", "control_chip_basic");
+    public static final Item controlChipAdvanced = new FTDItem("AdvancedControlChip", "control_chip_advanced");
+    public static final Item controlChipPerfect = new FTDItem("PerfectControlChip", "control_chip_perfect");
+    public static final Item transistorBasic = new FTDItem("BasicTransistor", "transistor_basic");
+    public static final Item transistorAdvanced = new FTDItem("AdvancedTransistor", "transistor_advanced");
+    public static final Item transistorPerfect = new FTDItem("PerfectTransistor", "transistor_perfect");
+    public static final Item circuitAdvanced = new FTDItem("AdvancedCircuit", "circuit_advanced");
+    public static final Item circuitQuantum = new FTDItem("QuantumCircuit", "circuit_quantum");
+    public static final Item circuitPerfect = new FTDItem("PerfectCircuit", "circuit_perfect");
+    public static final Item combsCosmic = new FTDItem("CosmicCombs", "combs_cosmic");
+    public static final Item coreEnergyChaotic = new FTDItem("ChaoticEnergyCore", "core_energy_chaotic");
+    public static final Item researchPackageScientific = new ResearchPackage("ScientificResearchPackage", "info.ResearchPackage.0.name");
+    public static final Item researchPackageMagical = new ResearchPackage("MagicalResearchPackage", "info.ResearchPackage.1.name");
+    public static final Item researchPackageIndustrial = new ResearchPackage("IndustrialResearchPackage", "info.ResearchPackage.2.name");
+    public static final Item researchPackageChemical = new ResearchPackage("ChemicalResearchPackage", "info.ResearchPackage.3.name");
+    public static final Item researchPackageAuto = new ResearchPackage("AutoResearchPackage", "info.ResearchPackage.4.name");
+    public static final Item researchPackageQuantum = new ResearchPackage("QuantumResearchPackage", "info.ResearchPackage.5.name");
+    public static final Item researchPackageDraconic = new ResearchPackage("DraconicResearchPackage", "info.ResearchPackage.6.name");
+    public static final Item wateringCanUltimate = new AdvancedWateringCan();
+    public static final Item researchBookCrops = new ResearchBook("CropsResearchBook", "research_book_crops", cropsResearchBookFirst, cropsResearchBookSecond, "info.ResearchBook.0.name");
+    public static final Item researchBookAvaritia = new ResearchBook("AvaritiaResearchBook", "research_book_avaritia", avaritiaResearchBookFirst, avaritiaResearchBookSecond, "info.ResearchBook.1.name");
 
     public static void registerItem() {
         ItemRegisterHelper.registerItem(FTDItems.emblemDragon);
         ItemRegisterHelper.registerItem(FTDItems.emblemStar);
-
-        if (!CommonProxy.additionSolarEclipse) {
-            ItemRegisterHelper.registerItem(FTDItems.dustBrick);
-            ItemRegisterHelper.registerItem(FTDItems.dustNetherBrick);
-            ItemRegisterHelper.registerItem(FTDItems.dustBurntBrick);
-            ItemRegisterHelper.registerItem(FTDItems.blendCoke);
-            ItemRegisterHelper.registerItem(FTDItems.blendFireproof);
-            ItemRegisterHelper.registerItem(FTDItems.blendHighQuality);
-            ItemRegisterHelper.registerItem(FTDItems.brickCoke);
-            ItemRegisterHelper.registerItem(FTDItems.brickFireproof);
-            ItemRegisterHelper.registerItem(FTDItems.brickSmeltery);
-            ItemRegisterHelper.registerItem(FTDItems.sheetCarbon);
-            ItemRegisterHelper.registerItem(FTDItems.sheetPlastic);
-            ItemRegisterHelper.registerItem(FTDItems.quantumModuleCompression);
-            ItemRegisterHelper.registerItem(FTDItems.quantumModuleInfinity);
-        }
-
-        if (!CommonProxy.additionDraconicEvolution) {
-            ItemRegisterHelper.registerItem(FTDItems.fragmentChaos);
-            ItemRegisterHelper.registerItem(FTDItems.ingotChaotic);
-            ItemRegisterHelper.registerItem(FTDItems.coreCorruption);
-            ItemRegisterHelper.registerItem(FTDItems.heartChaotic);
-        }
-
-        if (!CommonProxy.additionIC2) {
-            ItemRegisterHelper.registerItem(FTDItems.solderingIron);
-        }
-        if (!CommonProxy.additionThaumcraft) {
-            ItemRegisterHelper.registerItem(FTDItems.runicRod);
-            ItemRegisterHelper.registerItem(FTDItems.runicCap);
-        } if (!CommonProxy.additionBotania) {
-            ItemRegisterHelper.registerItem(FTDItems.amuletAntiCorruption);
-        }
-
-        if (!CommonProxy.additionMagicalCrops) {
-            ItemRegisterHelper.registerItem(FTDItems.seedsRubber);
-            ItemRegisterHelper.registerItem(FTDItems.seedsGraphite);
-            ItemRegisterHelper.registerItem(FTDItems.seedsMeteor);
-            ItemRegisterHelper.registerItem(FTDItems.seedsDesh);
-            ItemRegisterHelper.registerItem(FTDItems.seedsTitan);
-            ItemRegisterHelper.registerItem(FTDItems.seedsVoid);
-            ItemRegisterHelper.registerItem(FTDItems.seedsGaia);
-            ItemRegisterHelper.registerItem(FTDItems.seedsEfirium);
-            ItemRegisterHelper.registerItem(FTDItems.seedsNetherStar);
-            ItemRegisterHelper.registerItem(FTDItems.seedsAwakenedDraconium);
-            ItemRegisterHelper.registerItem(FTDItems.seedsCosmic);
-            ItemRegisterHelper.registerItem(FTDItems.essenceAbsolutio);
-            ItemRegisterHelper.registerItem(FTDItems.essenceRubber);
-            ItemRegisterHelper.registerItem(FTDItems.essenceGraphite);
-            ItemRegisterHelper.registerItem(FTDItems.essenceMeteor);
-            ItemRegisterHelper.registerItem(FTDItems.essenceDesh);
-            ItemRegisterHelper.registerItem(FTDItems.essenceTitan);
-            ItemRegisterHelper.registerItem(FTDItems.essenceVoid);
-            ItemRegisterHelper.registerItem(FTDItems.essenceGaia);
-            ItemRegisterHelper.registerItem(FTDItems.essenceEfirium);
-            ItemRegisterHelper.registerItem(FTDItems.essenceNetherStar);
-            ItemRegisterHelper.registerItem(FTDItems.essenceAwakenedDraconium);
-            ItemRegisterHelper.registerItem(FTDItems.essenceCosmic);
-        }
+        ItemRegisterHelper.registerItem(FTDItems.dustBrick);
+        ItemRegisterHelper.registerItem(FTDItems.dustNetherBrick);
+        ItemRegisterHelper.registerItem(FTDItems.dustBurntBrick);
+        ItemRegisterHelper.registerItem(FTDItems.blendCoke);
+        ItemRegisterHelper.registerItem(FTDItems.blendFireproof);
+        ItemRegisterHelper.registerItem(FTDItems.blendHighQuality);
+        ItemRegisterHelper.registerItem(FTDItems.brickCoke);
+        ItemRegisterHelper.registerItem(FTDItems.brickFireproof);
+        ItemRegisterHelper.registerItem(FTDItems.brickSmeltery);
+        ItemRegisterHelper.registerItem(FTDItems.sheetCarbon);
+        ItemRegisterHelper.registerItem(FTDItems.sheetPlastic);
+        ItemRegisterHelper.registerItem(FTDItems.quantumModuleCompression);
+        ItemRegisterHelper.registerItem(FTDItems.quantumModuleInfinity);
+        ItemRegisterHelper.registerItem(FTDItems.circuitBaseBasic);
+        ItemRegisterHelper.registerItem(FTDItems.circuitBaseAdvanced);
+        ItemRegisterHelper.registerItem(FTDItems.circuitBasePerfect);
+        ItemRegisterHelper.registerItem(FTDItems.controlChipBasic);
+        ItemRegisterHelper.registerItem(FTDItems.controlChipAdvanced);
+        ItemRegisterHelper.registerItem(FTDItems.controlChipPerfect);
+        ItemRegisterHelper.registerItem(FTDItems.transistorBasic);
+        ItemRegisterHelper.registerItem(FTDItems.transistorAdvanced);
+        ItemRegisterHelper.registerItem(FTDItems.transistorPerfect);
+        ItemRegisterHelper.registerItem(FTDItems.circuitAdvanced);
+        ItemRegisterHelper.registerItem(FTDItems.circuitQuantum);
+        ItemRegisterHelper.registerItem(FTDItems.circuitPerfect);
+        ItemRegisterHelper.registerItem(FTDItems.combsCosmic);
+        ItemRegisterHelper.registerItem(FTDItems.fragmentChaos);
+        ItemRegisterHelper.registerItem(FTDItems.ingotChaotic);
+        ItemRegisterHelper.registerItem(FTDItems.coreCorruption);
+        ItemRegisterHelper.registerItem(FTDItems.heartChaotic);
+        ItemRegisterHelper.registerItem(FTDItems.coreEnergyChaotic);
+        ItemRegisterHelper.registerItem(FTDItems.solderingIron);
+        ItemRegisterHelper.registerItem(FTDItems.runicRod);
+        ItemRegisterHelper.registerItem(FTDItems.runicCap);
+        ItemRegisterHelper.registerItem(FTDItems.amuletAntiCorruption);
+        ItemRegisterHelper.registerItem(FTDItems.seedsRubber);
+        ItemRegisterHelper.registerItem(FTDItems.seedsGraphite);
+        ItemRegisterHelper.registerItem(FTDItems.seedsMeteor);
+        ItemRegisterHelper.registerItem(FTDItems.seedsDesh);
+        ItemRegisterHelper.registerItem(FTDItems.seedsTitan);
+        ItemRegisterHelper.registerItem(FTDItems.seedsVoid);
+        ItemRegisterHelper.registerItem(FTDItems.seedsGaia);
+        ItemRegisterHelper.registerItem(FTDItems.seedsEfirium);
+        ItemRegisterHelper.registerItem(FTDItems.seedsNetherStar);
+        ItemRegisterHelper.registerItem(FTDItems.seedsAwakenedDraconium);
+        ItemRegisterHelper.registerItem(FTDItems.seedsCosmic);
+        ItemRegisterHelper.registerItem(FTDItems.essenceAbsolutio);
+        ItemRegisterHelper.registerItem(FTDItems.essenceRubber);
+        ItemRegisterHelper.registerItem(FTDItems.essenceGraphite);
+        ItemRegisterHelper.registerItem(FTDItems.essenceMeteor);
+        ItemRegisterHelper.registerItem(FTDItems.essenceDesh);
+        ItemRegisterHelper.registerItem(FTDItems.essenceTitan);
+        ItemRegisterHelper.registerItem(FTDItems.essenceVoid);
+        ItemRegisterHelper.registerItem(FTDItems.essenceGaia);
+        ItemRegisterHelper.registerItem(FTDItems.essenceEfirium);
+        ItemRegisterHelper.registerItem(FTDItems.essenceNetherStar);
+        ItemRegisterHelper.registerItem(FTDItems.essenceAwakenedDraconium);
+        ItemRegisterHelper.registerItem(FTDItems.essenceCosmic);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageScientific);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageMagical);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageIndustrial);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageChemical);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageAuto);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageQuantum);
+        ItemRegisterHelper.registerItem(FTDItems.researchPackageDraconic);
+        ItemRegisterHelper.registerItem(FTDItems.wateringCanUltimate);
+        ItemRegisterHelper.registerItem(FTDItems.researchBookCrops);
+        ItemRegisterHelper.registerItem(FTDItems.researchBookAvaritia);
     }
 }

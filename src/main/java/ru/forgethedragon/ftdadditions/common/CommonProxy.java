@@ -5,13 +5,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.common.config.Configuration;
-import org.lwjgl.opengl.Display;
-import ru.forgethedragon.ftdadditions.FTDAdditions;
-import ru.forgethedragon.ftdadditions.FTDTab;
-import ru.forgethedragon.ftdadditions.common.blocks.RunicAccelerator;
 import ru.forgethedragon.ftdadditions.common.blocks.tiles.TileRunicAccelerator;
 import ru.forgethedragon.ftdadditions.common.blocks.tiles.TileRunicStabilizer;
-import ru.forgethedragon.ftdadditions.common.items.wands.WandRunicRod;
 import ru.forgethedragon.ftdadditions.handlers.FTDBlocks;
 import ru.forgethedragon.ftdadditions.handlers.FTDItems;
 import ru.forgethedragon.ftdadditions.init.FTDAspects;
@@ -22,14 +17,10 @@ public class CommonProxy {
 
     public static Configuration config;
     public static String configFileName;
-    public static final String categoryAdditions = "Additions Category";
+    public static final String categoryOptions = "Options Category";
 
-    public static boolean additionSolarEclipse;
-    public static boolean additionDraconicEvolution;
-    public static boolean additionMagicalCrops;
-    public static boolean additionThaumcraft;
-    public static boolean additionBotania;
-    public static boolean additionIC2;
+    public static int rodCapacity;
+    public static String cropsResearchBookFirst, cropsResearchBookSecond, avaritiaResearchBookFirst, avaritiaResearchBookSecond;
 
     public void preInit(FMLPreInitializationEvent event) {
 
@@ -38,12 +29,11 @@ public class CommonProxy {
         try {
             config.load();
             configFileName = event.getSuggestedConfigurationFile().getAbsolutePath();
-            additionSolarEclipse = config.get(categoryAdditions, "Disable Addition for Solar Eclipse Modpack", false).getBoolean(false);
-            additionDraconicEvolution = config.get(categoryAdditions, "Disable Addition for DraconicEvolution", false).getBoolean(false);
-            additionMagicalCrops = config.get(categoryAdditions, "Disable Addition for MagicalCrops", false).getBoolean(false);
-            additionIC2 = config.get(categoryAdditions, "Disable Addition for IndustrialCraft2", false).getBoolean(false);
-            additionThaumcraft = config.get(categoryAdditions, "Disable Addition for Thaumcraft", false).getBoolean(false);
-            additionBotania = config.get(categoryAdditions, "Disable Addition for Botania", false).getBoolean(false);
+            rodCapacity = config.get(categoryOptions, "runicRodCapacity", 3500, "Amount Vis contained in Runic Rod.", 1, Integer.MAX_VALUE).getInt(3500);
+            cropsResearchBookFirst = config.get(categoryOptions, "cropsBookResearchKeyI", "KEY", "Crop's Book First Research Key, received when you use that Book. If Key does not exist, you will be crashed.").getString();
+            cropsResearchBookSecond = config.get(categoryOptions, "cropsBookResearchKeyII", "KEY", "Second Crop's Book Research Key.").getString();
+            avaritiaResearchBookFirst = config.get(categoryOptions, "avaritiaBookResearchKeyI", "KEY", "Avaritia's Book Research Key, received when you use that Book. If Key does not exist, you will be crashed.").getString();
+            avaritiaResearchBookSecond = config.get(categoryOptions, "avaritiaBookResearchKeyII", "KEY", "Second Avaritia's Book Research Key.").getString();
         } catch (Exception exc) {
             System.out.println("[FTDAdditions] Error occurred parsing config file");
             throw new RuntimeException(exc);

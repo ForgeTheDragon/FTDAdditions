@@ -17,9 +17,7 @@ public class EntityRegister {
     }
 
     public static void registerEntities() {
-        if (!CommonProxy.additionDraconicEvolution) {
-            EntityRegistry.registerModEntity(EntityHeart.class, "Persistent Heart", 12, FTDAdditions.instance, 32, 5, true);
-            EntityRegistry.registerModEntity(EntityChaoticHeart.class, "Chaotic Heart Item", 13, FTDAdditions.instance, 32, 5, true);
-        }
+        EntityRegistry.registerModEntity(EntityHeart.class, "Persistent Heart", 12, FTDAdditions.instance, 32, 5, true);
+        EntityRegistry.registerModEntity(EntityChaoticHeart.class, "Chaotic Heart Item", 13, FTDAdditions.instance, 32, 5, true);
     }
 }

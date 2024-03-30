@@ -1,4 +1,4 @@
-package ru.forgethedragon.ftdadditions.common.items;
+package ru.forgethedragon.ftdadditions.common.items.bases;
 
 import net.minecraft.item.Item;
 import ru.forgethedragon.ftdadditions.FTDAdditions;

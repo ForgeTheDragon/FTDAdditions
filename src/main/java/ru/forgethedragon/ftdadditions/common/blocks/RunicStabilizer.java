@@ -1,23 +1,13 @@
 package ru.forgethedragon.ftdadditions.common.blocks;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import ru.forgethedragon.ftdadditions.FTDAdditions;
 import ru.forgethedragon.ftdadditions.FTDTab;
-import ru.forgethedragon.ftdadditions.client.render.RenderRunicStabilizer;
 import ru.forgethedragon.ftdadditions.common.blocks.tiles.TileRunicStabilizer;
 import thaumcraft.api.crafting.IInfusionStabiliser;
-import thaumcraft.common.tiles.TileInfusionMatrix;
-
-import java.util.List;
 
 public class RunicStabilizer extends Block implements IInfusionStabiliser, ITileEntityProvider {
     public String name;

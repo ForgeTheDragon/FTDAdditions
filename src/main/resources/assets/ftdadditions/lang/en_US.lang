@@ -65,8 +65,47 @@ item.ChaoticHeart.name=Chaotic Heart
 item.SolderingIron.name=Soldering Iron
 item.Wand.runic_cap.cap=Illuminated by Antiquity
 item.Wand.runic_rod.rod=relict
+item.BlockStaff.name=§cThe Ultimate Staff [WIP]§r
+item.BasicCircuitBase.name=§eBasic Circuit Base§r
+item.AdvancedCircuitBase.name=§bAdvanced Circuit Base§r
+item.PerfectCircuitBase.name=§dPerfect Circuit Base§r
+item.BasicControlChip.name=§eBasic Control Chip§r
+item.AdvancedControlChip.name=§bAdvanced Control Chip§r
+item.PerfectControlChip.name=§dPerfect Control Chip§r
+item.BasicTransistor.name=§eBasic Transistor§r
+item.AdvancedTransistor.name=§bAdvanced Transistor§r
+item.PerfectTransistor.name=§dPerfect Transistor§r
+item.AdvancedCircuit.name=§bAdvanced Circuit§r
+item.QuantumCircuit.name=§dQuantum Circuit§r
+item.PerfectCircuit.name=§cPerfect Circuit§r
+item.CosmicCombs.name=§cCosmic Combs§r
+item.ChaoticEnergyCore.name=Chaotic Energy Core
+item.ScientificResearchPackage.name=§eResearch Package§r
+item.MagicalResearchPackage.name=§eResearch Package§r
+item.IndustrialResearchPackage.name=§eResearch Package§r
+item.ChemicalResearchPackage.name=§eResearch Package§r
+item.AutoResearchPackage.name=§eResearch Package§r
+item.QuantumResearchPackage.name=§eResearch Package§r
+item.DraconicResearchPackage.name=§eResearch Package§r
+item.WateringCanUltimate.name=§dWatering Can (Ultimate)§r
+item.CropsResearchBook.name=§6Farmer's Records§r
+item.AvaritiaResearchBook.name=§cDivine Knowledges§r
 
 ##Descriptions
+
+#Dragon Emblem
+info.DragonEmblem.0.name=§5Hold §6Shift §5for details.
+info.DragonEmblem.1.name=§5Your journey is finally over,
+info.DragonEmblem.2.name=§5you have been going to this for so long.
+info.DragonEmblem.3.name=§5At you remained some §6Choice§5,
+info.DragonEmblem.4.name=§6Leave the world §5or §6Continue§5.
+
+#Star Emblem
+info.StarEmblem.0.name=§5Hold §6Shift §5for details.
+info.StarEmblem.1.name=§5With regular §6Sunrise§5,
+info.StarEmblem.2.name=§5this very moment is coming.
+info.StarEmblem.3.name=§5You, compleshes §6Last quest§5,
+info.StarEmblem.4.name=§5finish here your §6Way§5.
 
 #Chaotic Heart
 info.ChaoticHeart.name=§5Hold §6Shift §5for details.
@@ -88,10 +127,33 @@ info.AmuletAntiCorruption.4.name=§5Can equip how §6Amulet§5.
 info.SolderingIron.0.name=Energy level: 1
 info.SolderingIron.1.name=
 
+#Block Staff
+info.BlockStaff.0.name=§5Hold §6Shift §5for details.
+info.BlockStaff.1.name=§5Created on concepte one §6King§r.
+info.BlockStaff.2.name=§5Use various blocks, to §6give
+info.BlockStaff.3.name=§6properties §5your tool.
+info.BlockStaff.4.name=
+info.BlockStaff.5.name=§5Installed Block: §6Absent
+info.BlockStaff.6.name=§5Установленный блок:
+
+#Research Packages
+info.ResearchPackage.0.name=§fScientific
+info.ResearchPackage.1.name=§dMagical
+info.ResearchPackage.2.name=§9Industrial
+info.ResearchPackage.3.name=§3Chemical
+info.ResearchPackage.4.name=§cAutomation
+info.ResearchPackage.5.name=§bQuantum
+info.ResearchPackage.6.name=§6Draconic
+
+#Research Books
+info.ResearchBook.0.name=§bA Book Filled with Knowledge of Cultures
+info.ResearchBook.1.name=§6A Book Overcrowded Energy of the Universe
+info.ResearchBook.2.name=§1Open her to learn.
+
 ##Special
 
 #Tabs
-itemGroup.FTDAdditions=FTDAdditions
+itemGroup.FTDAdditions=FTD Additions - SE:R
 
 #Aspects
 tc.aspect.relictum=Relic, Legend

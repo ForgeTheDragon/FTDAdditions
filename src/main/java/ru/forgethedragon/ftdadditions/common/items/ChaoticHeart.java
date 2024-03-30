@@ -15,8 +15,8 @@ import ru.forgethedragon.ftdadditions.common.entity.EntityHeart;
 import java.util.List;
 
 public class ChaoticHeart extends ItemHeart {
+    //Code taken from Draconic Evolution
 
-    //that class containment a code of other author
     public ChaoticHeart(String name, String texture) {
         this.setUnlocalizedName(name);
         this.setTextureName(FTDAdditions.TEXTURES + ":" + texture);

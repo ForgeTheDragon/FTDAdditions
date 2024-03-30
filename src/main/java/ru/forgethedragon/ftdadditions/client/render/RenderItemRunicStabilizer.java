@@ -1,5 +1,7 @@
 package ru.forgethedragon.ftdadditions.client.render;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -11,6 +13,7 @@ import org.lwjgl.opengl.GL11;
 
 import static org.lwjgl.opengl.GL11.glTranslated;
 
+@SideOnly(Side.CLIENT)
 public class RenderItemRunicStabilizer implements IItemRenderer {
     private final ResourceLocation texturePath = new ResourceLocation("ftdadditions:textures/models/runic_stabilizer_simple.png");
     private final ResourceLocation modelPath = new ResourceLocation("ftdadditions:models/runic_stabilizer.obj");

@@ -13,7 +13,7 @@ tile.NetherStarCrop.name=Культура адской звезды
 tile.AwakenedDraconiumCrop.name=Культура пробуждённого дракония
 tile.CosmicCrop.name=Космическая культура
 tile.ChaoticBlock.name=Хаотический блок
-tile.AbsolutioBlock.name=§8Absolutio Block§r
+tile.AbsolutioBlock.name=§8Абсолютиовый блок§r
 tile.RunicStabilizer.name=§eРунический стабилизатор§r
 tile.RunicAccelerator.name=§dРунический ускоритель [WIP]§r
 
@@ -66,12 +66,51 @@ item.SolderingIron.name=Паяльник
 item.AmuletAntiCorruption.name=§dАмулет Анти-искажения§r
 item.Wand.runic_cap.cap=Озарённый древностью
 item.Wand.runic_rod.rod=реликтовый
+item.BlockStaff.name=§cУльтимативный посох [WIP]§r
+item.BasicCircuitBase.name=§eБазовая основа схемы§r
+item.AdvancedCircuitBase.name=§bПродвинутая основа схемы§r
+item.PerfectCircuitBase.name=§dСовершенная основа схемы§r
+item.BasicControlChip.name=§eБазовый чип управления§r
+item.AdvancedControlChip.name=§bПродвинутый чип управления§r
+item.PerfectControlChip.name=§dСовершенный чип управления§r
+item.BasicTransistor.name=§eБазовый транзистор§r
+item.AdvancedTransistor.name=§bПродвинутый транзистор§r
+item.PerfectTransistor.name=§dСовершенный транзистор§r
+item.AdvancedCircuit.name=§bПродвинутая электросхема§r
+item.QuantumCircuit.name=§dКвантовая электросхема§r
+item.PerfectCircuit.name=§cСовершенная электросхема§r
+item.CosmicCombs.name=Космические соты
+item.ChaoticEnergyCore.name=Энергетическое ядро Хаоса
+item.ScientificResearchPackage.name=§eИсследовательский пакет§r
+item.MagicalResearchPackage.name=§eИсследовательский пакет§r
+item.IndustrialResearchPackage.name=§eИсследовательский пакет§r
+item.ChemicalResearchPackage.name=§eИсследовательский пакет§r
+item.AutoResearchPackage.name=§eИсследовательский пакет§r
+item.QuantumResearchPackage.name=§eИсследовательский пакет§r
+item.DraconicResearchPackage.name=§eИсследовательский пакет§r
+item.WateringCanUltimate.name=§dЛейка (Ультимативная)§r
+item.CropsResearchBook.name=§6Записи Фермера§r
+item.AvaritiaResearchBook.name=§cБожественные знания§r
 
 ##Описания
 
+#Эмблема Дракона
+info.DragonEmblem.0.name=§5Удерживайте §6Shift §5для деталей.
+info.DragonEmblem.1.name=§5Ваш путь наконец окончен,
+info.DragonEmblem.2.name=§5к этому шли вы так долго.
+info.DragonEmblem.3.name=§5Остался у вас некий §6Выбор§5,
+info.DragonEmblem.4.name=§6Покинуть мир §5или §6Продолжить§5.
+
+#Эмблема Звезды
+info.StarEmblem.0.name=§5Удерживайте §6Shift §5для деталей.
+info.StarEmblem.1.name=§5С очередным §6Восходом солнца§5,
+info.StarEmblem.2.name=§5настаёт этот самый момент.
+info.StarEmblem.3.name=§5Вы, завершаете §6Последний квест§5,
+info.StarEmblem.4.name=§5закончив здесь свой §6Путь§5.
+
 #Хаотическое сердце
 info.ChaoticHeart.name=§5Удерживайте §6Shift §5для деталей.
-info.ChaoticHeart.0.name=§5Используется в ритауле: §6Искажение Дракония хаосом§5.
+info.ChaoticHeart.0.name=§5Используется в ритуале: §6Искажение Дракония хаосом§5.
 info.ChaoticHeart.1.name=
 info.ChaoticHeart.2.name=§51) Поставьте §64 Пробуждённых блока§5.
 info.ChaoticHeart.3.name=§52) Активируйте Cердце, использовав силу взрыва.
@@ -89,10 +128,33 @@ info.AmuletAntiCorruption.4.name=§5Можно экипировать как §6
 info.SolderingIron.0.name=Энергоуровень: 1
 info.SolderingIron.1.name=
 
+#Block Staff
+info.BlockStaff.0.name=§5Удерживайте §6Shift §5для деталей.
+info.BlockStaff.1.name=§5Создан по концепции одного §6Короля§r.
+info.BlockStaff.2.name=§5Используйте различные блоки, чтобы §6придать
+info.BlockStaff.3.name=§6свойства §5вашему инструменту.
+info.BlockStaff.4.name=
+info.BlockStaff.5.name=§5Установленный блок: §6Отсутствует
+info.BlockStaff.6.name=§5Установленный блок:
+
+#Исследовательские пакеты
+info.ResearchPackage.0.name=§fНаучный
+info.ResearchPackage.1.name=§dМагический
+info.ResearchPackage.2.name=§9Промышленный
+info.ResearchPackage.3.name=§3Химический
+info.ResearchPackage.4.name=§cАвтоматизационный
+info.ResearchPackage.5.name=§bКвантовый
+info.ResearchPackage.6.name=§6Дракониевый
+
+#Исследовательские книги
+info.ResearchBook.0.name=§bКнига, наполненная знаниями о культурах
+info.ResearchBook.1.name=§6Книга, переполненная энергией вселенной
+info.ResearchBook.2.name=§1Откройте её, чтобы выучить.
+
 ##Особое
 
 #Вкладки
-itemGroup.FTDAdditions=FTDAdditions
+itemGroup.FTDAdditions=FTD Additions - SE:R
 
 #Аспекты
 tc.aspect.relictum=Реликвия, Легенда

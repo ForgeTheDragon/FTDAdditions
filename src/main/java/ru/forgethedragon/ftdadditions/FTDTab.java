@@ -6,7 +6,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagByte;
-import ru.forgethedragon.ftdadditions.common.CommonProxy;
 import ru.forgethedragon.ftdadditions.handlers.FTDBlocks;
 import ru.forgethedragon.ftdadditions.handlers.FTDItems;
 import thaumcraft.api.aspects.Aspect;
@@ -15,6 +14,8 @@ import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.items.wands.ItemWandCasting;
 
 import java.util.List;
+
+import static ru.forgethedragon.ftdadditions.common.CommonProxy.rodCapacity;
 
 public class FTDTab extends CreativeTabs {
     static ItemStack wandRunic;
@@ -36,13 +37,13 @@ public class FTDTab extends CreativeTabs {
         wandRunic = new ItemStack(ConfigItems.itemWandCasting, 1, 342);
         ((ItemWandCasting) wandRunic.getItem()).setRod(wandRunic, FTDItems.wandRunicRod);
         ((ItemWandCasting) wandRunic.getItem()).setCap(wandRunic, FTDItems.wandRunicCap);
-        ((ItemWandCasting) wandRunic.getItem()).storeAllVis(wandRunic, new AspectList().add(Aspect.AIR, 350000).add(Aspect.EARTH, 350000).add(Aspect.FIRE, 350000).add(Aspect.WATER, 350000).add(Aspect.ORDER, 350000).add(Aspect.ENTROPY, 350000));
+        ((ItemWandCasting) wandRunic.getItem()).storeAllVis(wandRunic, new AspectList().add(Aspect.AIR, rodCapacity * 100).add(Aspect.EARTH, rodCapacity * 100).add(Aspect.FIRE, rodCapacity * 100).add(Aspect.WATER, rodCapacity * 100).add(Aspect.ORDER, rodCapacity * 100).add(Aspect.ENTROPY, rodCapacity * 100));
 
         wandRunicSceptre = new ItemStack(ConfigItems.itemWandCasting, 1, 343);
         wandRunicSceptre.setTagInfo("sceptre", new NBTTagByte((byte)1));
         ((ItemWandCasting) wandRunicSceptre.getItem()).setRod(wandRunicSceptre, FTDItems.wandRunicRod);
         ((ItemWandCasting) wandRunicSceptre.getItem()).setCap(wandRunicSceptre, FTDItems.wandRunicCap);
-        ((ItemWandCasting) wandRunicSceptre.getItem()).storeAllVis(wandRunicSceptre, new AspectList().add(Aspect.AIR, 525000).add(Aspect.EARTH, 525000).add(Aspect.FIRE, 525000).add(Aspect.WATER, 525000).add(Aspect.ORDER, 525000).add(Aspect.ENTROPY, 525000));
+        ((ItemWandCasting) wandRunicSceptre.getItem()).storeAllVis(wandRunicSceptre, new AspectList().add(Aspect.AIR, ((rodCapacity / 2) + rodCapacity) * 100).add(Aspect.EARTH, ((rodCapacity / 2) + rodCapacity) * 100).add(Aspect.FIRE, ((rodCapacity / 2) + rodCapacity) * 100).add(Aspect.WATER, ((rodCapacity / 2) + rodCapacity) * 100).add(Aspect.ORDER, ((rodCapacity / 2) + rodCapacity) * 100).add(Aspect.ENTROPY, ((rodCapacity / 2) + rodCapacity) * 100));
     }
 
     @SideOnly(Side.CLIENT)
@@ -92,13 +93,37 @@ public class FTDTab extends CreativeTabs {
         list.add(new ItemStack(FTDItems.essenceAwakenedDraconium));
         list.add(new ItemStack(FTDItems.essenceCosmic));
         list.add(new ItemStack(FTDItems.coreCorruption));
+        list.add(new ItemStack(FTDItems.coreEnergyChaotic));
         list.add(new ItemStack(FTDItems.quantumModuleCompression));
         list.add(new ItemStack(FTDItems.quantumModuleInfinity));
+        list.add(new ItemStack(FTDItems.circuitBaseBasic));
+        list.add(new ItemStack(FTDItems.circuitBaseAdvanced));
+        list.add(new ItemStack(FTDItems.circuitBasePerfect));
+        list.add(new ItemStack(FTDItems.controlChipBasic));
+        list.add(new ItemStack(FTDItems.controlChipAdvanced));
+        list.add(new ItemStack(FTDItems.controlChipPerfect));
+        list.add(new ItemStack(FTDItems.transistorBasic));
+        list.add(new ItemStack(FTDItems.transistorAdvanced));
+        list.add(new ItemStack(FTDItems.transistorPerfect));
+        list.add(new ItemStack(FTDItems.circuitAdvanced));
+        list.add(new ItemStack(FTDItems.circuitQuantum));
+        list.add(new ItemStack(FTDItems.circuitPerfect));
+        list.add(new ItemStack(FTDItems.combsCosmic));
         list.add(new ItemStack(FTDItems.runicRod));
         list.add(new ItemStack(FTDItems.runicCap));
+        list.add(new ItemStack(FTDItems.researchBookCrops));
+        list.add(new ItemStack(FTDItems.researchBookAvaritia));
         list.add(new ItemStack(FTDItems.heartChaotic));
         list.add(new ItemStack(FTDItems.solderingIron, 1, 26));
+        list.add(new ItemStack(FTDItems.wateringCanUltimate, 1, 5));
         list.add(new ItemStack(FTDItems.amuletAntiCorruption));
+        list.add(new ItemStack(FTDItems.researchPackageScientific));
+        list.add(new ItemStack(FTDItems.researchPackageMagical));
+        list.add(new ItemStack(FTDItems.researchPackageIndustrial));
+        list.add(new ItemStack(FTDItems.researchPackageChemical));
+        list.add(new ItemStack(FTDItems.researchPackageAuto));
+        list.add(new ItemStack(FTDItems.researchPackageQuantum));
+        list.add(new ItemStack(FTDItems.researchPackageDraconic));
         list.add(wandRunic);
         list.add(wandRunicSceptre);
     }

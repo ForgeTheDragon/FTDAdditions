@@ -16,7 +16,7 @@ import ru.forgethedragon.ftdadditions.common.entity.EntityChaoticHeart;
 import ru.forgethedragon.ftdadditions.handlers.FTDItems;
 
 public class RenderChaoticHeart extends Render {
-    //Class taken from Draconic Evolution
+    //Code taken from Draconic Evolution
 
     private static final ResourceLocation texture = new ResourceLocation(FTDAdditions.TEXTURES + ":" + "textures/items/heart_chaotic.png");
 
@@ -34,7 +34,6 @@ public class RenderChaoticHeart extends Render {
             RenderManager.instance.renderEntityWithPosYaw(itemEntity, 0.0D, 0.0D, 0.0D, 0.0F, 0.0F);
             RenderItem.renderInFrame = false;
         }
-
 
         {
             OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, 200f, 200f);

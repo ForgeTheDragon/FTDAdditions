@@ -24,8 +24,8 @@ public class FTDAdditions
     public static CommonProxy proxy;
 
     public static final String MODID = "FTDAdditions";
-    public static final String MODNAME = "FTDAdditions";
-    public static final String VERSION = "1.1.0";
+    public static final String MODNAME = "FTD Additions";
+    public static final String VERSION = "1.2.0";
     public static final String DEPENDENCIES = "required-after:DraconicEvolution;required-after:magicalcrops;required-after:IC2;required-after:Thaumcraft;required-after:Botania";
     public static final String TEXTURES = "ftdadditions";
 

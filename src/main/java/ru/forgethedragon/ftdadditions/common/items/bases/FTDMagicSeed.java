@@ -1,4 +1,4 @@
-package ru.forgethedragon.ftdadditions.common.items;
+package ru.forgethedragon.ftdadditions.common.items.bases;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemSeeds;
